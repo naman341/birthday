@@ -391,7 +391,7 @@ button:hover {
 }
 
 .album_unit_inner:hover {
-    transform: skewY(0deg) skewX(0deg) scale(var(--highlight-scale, 3.5));
+    transform: skewY(0deg) skewX(0deg) scale(var(--highlight-scale, 1.5));
     opacity: 1; /* Ensure full opacity on hover */
     z-index: 2;
 }
