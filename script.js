@@ -3,8 +3,6 @@ function startAnimation() {
     for (let i = 0; i < 20; i++) {
         createBalloon(container);
     }
-    document.getElementById('balloonButton').style.display = 'none';
-    document.getElementById('sketchButton').style.display = 'inline-block';
 }
 
 function createBalloon(container) {
@@ -73,6 +71,8 @@ function showPhotoAlbum() {
 
 // Photo album interactivity
 window.onload = function() {
+    startAnimation(); // Start the balloon animation when the page loads
+    
     var album_units = document.getElementsByClassName("album_unit");
     for (let i = 0; i < album_units.length; i++) {
         album_units[i].onmouseenter = function() {
