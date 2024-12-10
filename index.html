@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Deppressso!</h1>
+        <p>
+            I first saw you hanging with your friends,<br>
+            Fell in love at first sight, no pretense.<br>
+            Days went by, watching you from afar,<br>
+            On the basketball court, you were my star.<br><br>
+            
+            Then one day, you came to me,<br>
+            Asked if I loved you, my heart skipped a beat.<br>
+            Love was paused, for a year or two,<br>
+            But my heart never stopped yearning for you.<br><br>
+            
+            Happy birthday, my love, my dear,<br>
+            Thank you for staying, for always being near.<br>
+            Sorry for the times I made you cry,<br>
+            I'll love you forever, till the day I die.<br><br>
+            
+            Three long years with no words exchanged,<br>
+            Then I saw you at the farewell, feelings unchanged.<br>
+            Couldn’t speak, couldn’t find the way,<br>
+            To tell you I loved you, every single day.<br><br>
+            
+            Then one day, our paths crossed again,<br>
+            My RC car, the spark to reignite the flame.<br>
+            We started talking, about life and dreams,<br>
+            Love found its way, or so it seems.<br><br>
+            
+            Happy birthday, my love, my dear,<br>
+            Thank you for staying, for always being near.<br>
+            Sorry for the times I made you cry,<br>
+            I'll love you forever, till the day I die.<br><br>
+            
+            Through ups and downs, thick and thin,<br>
+            You've been my rock, my love within.<br>
+            Let's cherish this love, let it grow strong,<br>
+            Thank you for forgiving all my wrongs.<br><br>
+            
+            Happy birthday, my love, my dear,<br>
+            Thank you for staying, for always being near.<br>
+            Sorry for the times I made you cry,<br>
+            I'll love you forever, till the day I die.<br><br>
+            
+            So here’s to you, on your special day,<br>
+            With all my love, in every way.<br>
+            Happy birthday, my heart’s delight,<br>
+            I promise to hold you, morning and night.
+        </p>
+        <button id="sketchButton" onclick="showSketch()">Another Surprise</button>
+    </div>
+    <div id="balloon-container" class="balloon-container"></div>
+    <div id="sketch-container" class="sketch-container" style="display:none;">
+        <img id="sketch" src="sketch_animation.gif" alt="Sketch Animation of Her" />
+        <button id="backButton" onclick="hideSketch()">Back to the Page</button>
+    </div>
+    <div id="message-container" class="message-container" style="display:none;">
+    </div>
+    <div id="cake-container" class="cake-container" style="display:none;">
+        <div class="candle-count-display">
+            Candles on the Cake: <span id="candleCount">0</span>
+        </div>
+        <div class="cake">
+            <div class="plate"></div>
+            <div class="layer layer-bottom"></div>
+            <div class="layer layer-middle"></div>
+            <div class="layer layer-top"></div>
+            <div class="icing"></div>
+            <div class="drip drip1"></div>
+            <div class="drip drip2"></div>
+            <div class="drip drip3"></div>
+        </div>
+    </div>
+    <div id="birthday-container" class="birthday-container"></div>
+    <div id="album-container" class="album-container" style="display:none;">
+        <div class="album_outer">
+            <div class="album_inner">
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo1.png" alt="Photo 1"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo2.png" alt="Photo 2"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo3.png" alt="Photo 3"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo4.png" alt="Photo 4"></div>
+                    </div>
+                </a>
+
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo5.png" alt="Photo 5"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo6.png" alt="Photo 6"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo7.png" alt="Photo 7"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo8.png" alt="Photo 8"></div>
+                    </div>
+                </a>
+
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo9.png" alt="Photo 9"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo10.png" alt="Photo 10"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo11.png" alt="Photo 11"></div>
+                    </div>
+                </a>
+
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo12.jpg" alt="Photo 12"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo13.jpg" alt="Photo 13"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo14.jpg" alt="Photo 14"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo15.jpg" alt="Photo 15"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo16.jpg" alt="Photo 16"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo17.jpg" alt="Photo 17"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo18.jpg" alt="Photo 18"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo19.jpg" alt="Photo 19"></div>
+                    </div>
+                </a>
+
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo20.jpg" alt="Photo 20"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo21.jpg" alt="Photo 21"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo22.jpg" alt="Photo 22"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo23.jpg" alt="Photo 23"></div>
+                    </div>
+                </a>
+
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo24.jpg" alt="Photo 24"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo25.jpg" alt="Photo 25"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo26.jpg" alt="Photo 26"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo27.jpg" alt="Photo 27"></div>
+                    </div>
+                </a>
+
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo28.jpg" alt="Photo 28"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo29.jpg" alt="Photo 29"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo30.jpg" alt="Photo 30"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo31.jpg" alt="Photo 31"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo32.jpg" alt="Photo 32"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo33.jpg" alt="Photo 33"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo34.jpg" alt="Photo 34"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo35.jpg" alt="Photo 35"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo36.jpg" alt="Photo 36"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo37.jpg" alt="Photo 37"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo38.jpg" alt="Photo 38"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo39.jpg" alt="Photo 39"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo40.jpg" alt="Photo 40"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo41.jpg" alt="Photo 41"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo42.jpg" alt="Photo 42"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo43.jpg" alt="Photo 43"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo44.jpg" alt="Photo 44"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo45.jpg" alt="Photo 45"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo46.jpg" alt="Photo 46"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo47.jpg" alt="Photo 47"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo48.jpg" alt="Photo 48"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo49.jpg" alt="Photo 49"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo50.jpg" alt="Photo 50"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo51.jpg" alt="Photo 51"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo52.jpg" alt="Photo 52"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo53.jpg" alt="Photo 53"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo54.jpg" alt="Photo 54"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo55.jpg" alt="Photo 55"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo56.jpg" alt="Photo 56"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo57.jpg" alt="Photo 57"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo58.jpg" alt="Photo 58"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo59.jpg" alt="Photo 59"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo60.jpg" alt="Photo 60"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo61.jpg" alt="Photo 61"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo62.jpg" alt="Photo 62"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo63.jpg" alt="Photo 63"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo64.jpg" alt="Photo 64"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo65.jpg" alt="Photo 65"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo66.jpg" alt="Photo 66"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo67.jpg" alt="Photo 67"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo68.jpg" alt="Photo 68"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo69.jpg" alt="Photo 69"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo70.jpg" alt="Photo 70"></div>
+                    </div>
+                </a>
+
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo71.jpg" alt="Photo 71"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo72.jpg" alt="Photo 72"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo73.jpg" alt="Photo 73"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo74.jpg" alt="Photo 74"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo75.jpg" alt="Photo 75"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo76.jpg" alt="Photo 76"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo77.jpg" alt="Photo 77"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo78.jpg" alt="Photo 78"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo79.jpg" alt="Photo 79"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo80.jpg" alt="Photo 80"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo81.jpg" alt="Photo 81"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo82.jpg" alt="Photo 82"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo83.jpg" alt="Photo 83"></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="album_unit">
+                        <div class="album_unit_inner"><img src="photo84.jpg" alt="Photo 84"></div>
+                    </div>
+                </a>
+                ...
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
