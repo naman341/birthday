@@ -166,7 +166,7 @@ function initializeCandleBlowing() {
         }
         let average = sum / bufferLength;
 
-        return average > 50;  // Adjust threshold for sensitivity
+        return average > 100;  // Adjust threshold for sensitivity
     }
 
     function blowOutCandles() {
